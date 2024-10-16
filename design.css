@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .controls, .algorithms, .inputs {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  input[type="number"], input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 24px);
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #status {
+    margin-top: 20px;
+  }
+  
+  #status-text {
+    color: #333;
+    font-weight: bold;
+    background-color: #e7f3e7;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  ul#cache-display {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+  }
+  
+  ul#cache-display li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+  }
+  
+  ul#cache-display li.added {
+    background-color: #d1ffd6;
+  }
+  
+  ul#cache-display li.accessed {
+    background-color: #e0ebff;
+  }
+  
+  ul#cache-display li.evicted {
+    background-color: #ffd6d6;
+  }
+  
+  ul#cache-display li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  
+    input[type="number"], input[type="text"] {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  

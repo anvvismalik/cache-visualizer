@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cache Visualizer</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cache Visualizer</h1>
+    
+    <div class="controls">
+      <label for="cache-size">Cache Size:</label>
+      <input type="number" id="cache-size" value="3">
+      <button onclick="setCacheSize()">Set Cache Size</button>
+    </div>
+
+    <div class="algorithms">
+      <button onclick="setAlgorithm('LRU')">LRU Cache</button>
+      <button onclick="setAlgorithm('FIFO')">FIFO Cache</button>
+      <button onclick="setAlgorithm('LFU')">LFU Cache</button>
+    </div>
+
+    <div class="inputs">
+      <input type="text" id="input-key" placeholder="Enter key">
+      <input type="text" id="input-value" placeholder="Enter value">
+      <button onclick="addToCache()">Add to Cache</button>
+      <button onclick="accessFromCache()">Access Cache</button>
+    </div>
+
+    <div id="status">
+      <p id="status-text">Status will be displayed here...</p>
+    </div>
+
+    <ul id="cache-display">
+      <!-- Cache content will be dynamically inserted here -->
+    </ul>
+  </div>
+
+  <script src="designn.js"></script>
+</body>
+</html>
